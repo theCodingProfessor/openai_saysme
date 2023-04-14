@@ -1,0 +1,267 @@
+/* (c) Clinton Garwood
+   Main Style Sheet for openAI demo
+   Spring 2023 open AI Demo using Flask */
+
+body {
+  background-color: #FFF;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+/* Start styles for index.html page */
+.button_table_main {
+    width: 100%;
+    border: none;
+}
+
+.button_table_columns thead, td{
+    width: 24%;
+    border: none;
+}
+/* End styles for index.html page */
+
+/* Styling the Main Header for the site:
+   The main header lives inside of a Bootstrap jumbotron (a div)
+   which has a background color of a light green, dark text,
+   with its content slightly pushed in from the left
+   the H1, h2, p and href-link will each be styled independently
+*/
+
+.jumbotron {
+    color: #000007;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    background-color: #0ddafd;
+}
+
+.skip_to_main {
+    /* Accessibility Feature allows screen readers to skip to main content
+    This can be set to display: none; without problems to site design while
+      still providing functionality to screen readers
+    Color is customized to a very deep blue - color: 000060;
+    inherits jumbotron left padding
+    resets jumbotron font-weight to normal
+    */
+    font-weight: normal;
+    color: rgb(0, 0, 128);
+    display: none;
+}
+
+.header_titles {
+    /* This is <h1> and <h2> inside the header-jumbotron
+    font (color is customized to black, made large, and weight is added);
+    inherits jumbotron left padding - but adds padding to top of each element
+    */
+    color:#000007;
+    font-size: xx-large;
+	font-weight: bold;
+}
+
+.header_description {
+    /* This is the <p> paragraph tag in the jumbo-tron header
+    Color inherits jumbotron font black and left padding
+    This adds a bit of top-padding to break free from the h2 header
+    */
+    font-weight: normal;
+    font-size: large;
+}
+
+/* Styling the Site Navbar (main menu) for the site:
+   The main menu lives inside of a Bootstrap nav (a div)
+   which has a background color of a light green, dark text,
+   with its content slightly pushed in from the left
+   the H1, h2, p and href-link will each be styled independently
+*/
+nav {
+    /*  padding pushes the interior content left;
+     replace padding with margin to see the distinction
+     between padding and margin */
+    padding-left: 50px;
+    background-color: #0ddafd;
+}
+#main_menu {
+        background-color: #0ddafd;
+}
+.navbar-nav li a {
+    color: #000 !important;
+    border-radius: 10px;
+}
+.current {
+    font-weight: bold;
+    background-color: gold;
+}
+
+
+/* Basic Button Style Area - For 'main' run of content on a page:
+   These buttons make use of Bootstrap button (css properties)
+*/
+
+.content_title {
+    /* This is the <h3> inside the main content section of the page
+    font (color is customized to black, made large, and weight is added);
+    inherits jumbotron left padding - but adds padding to top of each element
+    */
+    color:#000007;
+    font-size: xx-large;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+article {
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+article > p {
+    color:#000007;
+    font-size: large;
+    font-weight: normal;
+    padding-top: 5px;
+    margin-left: 1.5em;
+}
+
+article > blockquote{
+    margin-left: 2.5em;}
+
+.topics_description {
+    color:#000007;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+.topic_title {
+    color:#000007;
+    font-size: .8em;
+    padding-top: 10px;
+}
+
+.topic_code {
+    font-size: large;
+    color: crimson;
+}
+
+code {
+    font-size: large;
+    color: crimson;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px
+}
+
+.in_code {
+    padding-left: 50px;
+}
+
+.en_code {
+    padding-left: 70px;
+}
+
+
+/* Styling Site Page Buttons (other pages on the site):
+   These buttons are called out with class in_link and
+*/
+
+.in_link {
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.site_link {
+    background-color: rgb(124, 253, 165);
+    border-color: rgb(24, 131, 191);
+    width: 100%;
+}
+
+/* Styling the Site Buttons (external sources) for the site:
+   These buttons make use of Bootstrap button (css properties)
+   There are four kinds of buttons:
+     reds, blues, greens, purps;
+*/
+
+.ex_link {
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.reds{
+    background-color: rgb(255,0,0)  ;
+    width: 100%;
+    height: 3em;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.reds:hover {
+    color: #000000 !important;
+    background-color: rgba(255,0,50,50%); }
+
+.blues{
+    background-color: rgb(26,94,154);
+    width: 100%;
+}
+.blues:hover {
+    color: #FFF !important;
+    background-color: blue;
+}
+
+.greens{
+    background-color: rgb(4,170,109);
+    width: 100%;
+}
+.greens:hover {
+    color: #FFF !important;
+    background-color: green;
+}
+
+.purps{
+    background-color: rgb(121,82,179);
+    width: 100%;
+}
+.purps:hover {
+    color: #FFF !important;
+    background-color: purple;
+}
+
+.four_links {
+    display:inline-block;
+    width: 21%;
+}
+.three_links{
+    width: 29%;
+    display:inline-block;
+}
+.two_links{
+    width: 45%;
+    display:inline-block;
+}
+
+footer {
+    background-color: #FFFFFF;
+}
+.foot_data {
+    text-align: center;
+}
+
+/* Styles for External Icon Library Demo */
+.icon-container {
+    font-size: 50px; }
+
+.fa-code { color: red; }
+
+/* Styles for External Font Library Demo */
+#use_goofont {
+    font-family: 'Tangerine', serif;
+    font-size: 48px; }
