@@ -1,0 +1,7 @@
+# Ignore Jetbrains IDE settings folder
+.idea/
+
+# Ignore config files
+*.config
+*.conf
+*.ini
