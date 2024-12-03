@@ -1,17 +1,23 @@
-# openai_saysme
-General GUI for OpenAI using Flask and Python
+## OPEN AI Says Me openai_saysme 
 
-This is a Python/Flask interface to tinker with the OpenAI Chat and Response Modules
-The requirements.txt file indicates what libraries are needed to run this in your own dev environment.
-By the way this is not live for production, but is just a sandbox app. 
+A Sandbox Web-App Style Interface to prompt multiple Large Language Models, LLMs.
 
-To run any of these functions, your will need your own OpenAI key. 
-I have left a openai.api_key = "your key goes here" as a placeholder, you can get a free one at openai.com (register as developer)
-
-Although this little app is not much to look at, it has the three basic flavors of resonses from the openai chat bot wired up.
+This interface is designed as a sandbox to explore Chat/Response Cycles
+Application Features:
+ 
+- Prompt and Response, QA
+- Spelling and Grammar
+- Re-Phrased
 
 ![image](https://user-images.githubusercontent.com/50419924/232132587-a286707b-5d50-4e01-a374-ec8ef19cea9a.png)api
 
-This project is distribted (public) using the MIT Open Source License.
-I haven't asked openai if they mind that I am showing their api, I hope they will be allright with it.
+The stack includes Flask, Python, and AI Suite (https://github.com/andrewyng/aisuite/).
+See requirements.txt for the full list of libraries needed.
 
+Using third-party LLM services requires authenticated API keys. 
+`openai.api_key = "your key goes here" `
+
+<hr>
+
+Last Update: December 2024
+License MIT, CC by and all others © Clinton Garwood 
