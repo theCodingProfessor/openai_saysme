@@ -1,6 +1,7 @@
 /* (c) Clinton Garwood
    Main Style Sheet for openAI demo
-   Spring 2023 open AI Demo using Flask */
+   Spring 2023 open AI Demo using Flask
+   Winter 2024 AI Open Says Me extension */
 
 body {
   background-color: #FFF;
@@ -31,9 +32,8 @@ main {
 
 .jumbotron {
     color: #000007;
-    padding-bottom: 20px;
-    padding-left: 25px;
-    background-color: #0ddafd;
+    padding: 1em 0 1em 2em;
+    background-color: #008FFF;
 }
 
 .skip_to_main {
@@ -54,9 +54,10 @@ main {
     font (color is customized to black, made large, and weight is added);
     inherits jumbotron left padding - but adds padding to top of each element
     */
-    color:#000007;
-    font-size: xx-large;
+    color: #000007;
+    font-size: large;
 	font-weight: bold;
+    display: inline-block;
 }
 
 .header_description {
@@ -64,8 +65,11 @@ main {
     Color inherits jumbotron font black and left padding
     This adds a bit of top-padding to break free from the h2 header
     */
-    font-weight: normal;
+    font-weight: bolder;
     font-size: large;
+    display: inline-block;
+    float: right;
+    padding-right: 1em;
 }
 
 /* Styling the Site Navbar (main menu) for the site:
@@ -75,28 +79,35 @@ main {
    the H1, h2, p and href-link will each be styled independently
 */
 nav {
-    /*  padding pushes the interior content left;
-     replace padding with margin to see the distinction
-     between padding and margin */
-    padding-left: 50px;
-    background-color: #0ddafd;
+    padding: 1em 0;              /* Add top and bottom padding */
+    background-color: #000008;   /* Keep the background color */
 }
-#main_menu {
-        background-color: #0ddafd;
+
+.navbar-nav {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: space-evenly; /* Distribute items evenly across the container */
+    align-items: center;          /* Align items vertically */
+    list-style: none;             /* Remove default list styling */
+    padding: 0;                   /* Remove default padding */
+    margin: 0;                    /* Remove default margin */
 }
+
+.navbar-nav li {
+    flex: 1;                      /* Ensure each item takes up equal space */
+    text-align: center;           /* Center text inside each item */
+    padding: 0 2em 0 2em;         /* Add padding for clickable area */
+}
+
 .navbar-nav li a {
-    color: #000 !important;
-    border-radius: 10px;
+    display: block;               /* Make the links behave as block elements */
+    color: #008FFF !important;    /* Set link color */
+    text-decoration: none;        /* Remove underline from links */
+    padding: 0.5em;               /* Add padding for clickable area */
 }
 .current {
     font-weight: bold;
     background-color: gold;
 }
-
-
-/* Basic Button Style Area - For 'main' run of content on a page:
-   These buttons make use of Bootstrap button (css properties)
-*/
 
 .content_title {
     /* This is the <h3> inside the main content section of the page
@@ -114,7 +125,6 @@ article {
     padding-bottom: 10px;
     font-size: 1.5em;
 }
-
 article > p {
     color:#000007;
     font-size: large;
@@ -226,7 +236,7 @@ code {
     background-color: green;
 }
 
-.purps{
+.purples{
     background-color: rgb(121,82,179);
     width: 100%;
 }
@@ -265,3 +275,22 @@ footer {
 #use_goofont {
     font-family: 'Tangerine', serif;
     font-size: 48px; }
+
+.cc_logo{
+    border-width: 0;
+    height: 1em;
+   }
+
+
+/*  Media Query */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;  /* Stack items vertically */
+    }
+    .navbar-nav li {
+        flex: none;             /* Reset flex behavior */
+    }
+}
+.form_line {
+    margin: 1em 0 1em 0;
+}
