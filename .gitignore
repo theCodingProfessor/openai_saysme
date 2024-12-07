@@ -6,9 +6,10 @@
 *.conf
 *.ini
 
-# Ignore Python cache files
-__pycache__/
-*.pyc
+# Ignore virtual environment files
+/.venv/*
+/.venv/Lib
+/.venv/Scripts
 
-# Ignore venv files
-venv/*
+# Ignore Pycache
+__pycache__
