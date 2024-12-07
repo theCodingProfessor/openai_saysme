@@ -8,11 +8,8 @@ openai.api_key = "your key goes here"
 app = Flask(__name__)
 
 
+@app.route('/index')
 @app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
-
 @app.route('/home', methods=['GET', 'POST'])
 def run_home():  #
     return render_template('index.html')
