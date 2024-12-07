@@ -5,3 +5,11 @@
 *.config
 *.conf
 *.ini
+
+# Ignore virtual environment files
+/.venv/*
+/.venv/Lib
+/.venv/Scripts
+
+# Ignore Pycache
+__pycache__
