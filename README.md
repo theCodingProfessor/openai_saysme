@@ -9,7 +9,7 @@ Application Features:
 - Spelling and Grammar
 - Re-Phrased
 
-![Image Of Chat Page](/static/img/chat_page.png)api
+![Image Of Chat Page](/static/img/chat_page.png)
 
 The stack includes Flask, Python, and AI Suite (https://github.com/andrewyng/aisuite/).
 See requirements.txt for the full list of libraries needed.
