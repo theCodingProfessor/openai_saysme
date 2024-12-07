@@ -5,3 +5,10 @@
 *.config
 *.conf
 *.ini
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore venv files
+venv/*
